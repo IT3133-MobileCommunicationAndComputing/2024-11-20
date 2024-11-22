@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import Childcom from './Childcom';
+
 import {useState} from 'react';
+import Childcom from './Childcom';
 
 function App() {
   const [childname,setChildname]=useState("Default");
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <h2>Hello React I'm Parent</h2>
-      <Childcom stfun={receiveName}/>
+      <Childcom setfun={receiveName}/>
       <p>Parent:My child said:{childname}</p>
     </div>
   );
